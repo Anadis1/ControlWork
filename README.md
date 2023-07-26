@@ -23,14 +23,14 @@ int ArrayLength = 0;
 ```
 Используя цикл ```For``` перебираем массив ```originalArray```, отдавая каждый элемент методу ```Length``` таким образом определяя длинну каждого элемента для дальнейшей сортировки с помощью ```if``` и прибавляем единицу в аргумент ```ArrayLength``` за каждый элемент состоящий из трех или менее символов.
 ```
-    for (int i = 0; i < Array.Length; i++)          
+for (int i = 0; i < Array.Length; i++)          
+{
+    int temporary = Array[i].Length;
+    if (temporary <= 3)
     {
-        int temporary = Array[i].Length;
-        if (temporary <= 3)
-        {
-            ArrayLength++;
-        }
+        ArrayLength++;
     }
+}
 ```
 Создаем новый массив, как длинну указываем переменную ```ArrayLength``` 
 ```
