@@ -49,8 +49,3 @@ string[] originalArray = { "День", "Ночь", "Три", "Пять", "Лак
 string[] finishedArray = newArrayOnLenghth(originalArray);
 
 printArrey(finishedArray);
-
-
-
-
-
